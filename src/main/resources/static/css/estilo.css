@@ -1,0 +1,194 @@
+html{
+    width: 100%;
+    height:100%;
+}
+body{
+    width: 100%;
+    height:100%;
+}
+.container-principal{
+    height: 700px;
+}
+
+.div-contato {
+    background: #1b1b12;
+}
+
+.lbl-titulo{
+    width: 100%;
+    color:#b68809;
+    font-weight: bold;
+}
+
+.lbl-dado{
+    width: 100%;
+    color: white;
+}
+
+
+footer{
+    width: 100%;
+    text-align: center;
+    height: 70px;
+    background-color: #eeedf3;
+}
+
+.fa-edit{
+    
+    padding-left: 3px;
+
+}
+
+.lbl-footer{
+    margin-top: 20px;
+}
+
+.container-funcionarios{
+    min-height: 450px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container-funcionario{
+    width: 350px;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container-usuarios{
+    min-height: 450px;
+    width: 700px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container-usuario{
+    width: 350px;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container-projetos{
+    min-height: 700px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container-projeto{
+    width: 500px;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.form-titulo{
+    background-color: #eeedf3;
+    text-align: center;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form-tabela{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-novo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: right;
+    color: forestgreen;
+}
+
+.badge-botao{
+    padding: 8px;
+}
+
+.tabela-controle{
+    padding: 3px;
+    width: 10px;
+}
+
+.a-controle{
+
+    color: #525252;
+}
+.a-controle:hover{
+    color: forestgreen;
+}
+
+
+.btn-width{
+    width: 49%;
+}
+
+.btn-voltar-width{
+    width: 99%;
+}
+input{
+    text-align: center;
+}
+
+select{
+    text-align-last: center;
+}
+
+
+.alert{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.modal-header{
+    background-color: #cc1e1e;
+    color: white;
+}
+
+.tb-border{
+    border: solid #777777 1px;
+}
+
+.list-group{
+    text-align: center;
+}
+
+.cl-dark{
+    color: white;
+}
+
+@media screen and (max-width: 500px){
+    .container-funcionarios{
+        width: 99%;
+    }
+
+    
+
+    .form-tabela{
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    .container-funcionario{
+        width: 90%;
+    }
+
+}
