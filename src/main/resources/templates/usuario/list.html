@@ -44,8 +44,7 @@
                         <tr>
                             <th>Cód.</th>
                             <th>Nome</th>
-                            <th>CPF</th>
-                            <th colspan="4">Senha</th>
+                            <th colspan="4">CPF</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,7 +52,6 @@
                             <td th:text="${usuario.id}"></td>
                             <td th:text="${usuario.nome}"></td>
                             <td th:text="${usuario.cpf}"></td>
-                            <td th:text="${usuario.senha}"></td>
                             <td class="tabela-controle">
                                 <button class="btn btn-outline-info" type="button" style="width: 47px; height: 38px;"
                                 th:onclick="|showView(${usuario.id}, 'usuario')|" >
