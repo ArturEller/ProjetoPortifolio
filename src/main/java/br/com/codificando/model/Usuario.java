@@ -1,9 +1,14 @@
 package br.com.codificando.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
@@ -32,6 +37,16 @@ public class Usuario {
 	@NonNull
 	@Size(max=11)
 	private String cpf;
+	
+	private boolean ativo;
+	
+	@ManyToMany
+	@JoinTable(
+			name="usuario_permissao",
+			joinColumns=@JoinColumn(name="usuario_id"),
+			inverseJoinColumns=@JoinColumn(name="permissao_id")
+			)
+	private List<Permissao> permissoes;
 
 	public Long getId() {
 		return id;
@@ -72,6 +87,22 @@ public class Usuario {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+
+	public boolean isAtivo() {
+		return ativo;
+	}
+
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
+	}
+
+	public List<Permissao> getPermissoes() {
+		return permissoes;
+	}
+
+	public void setPermissoes(List<Permissao> permissoes) {
+		this.permissoes = permissoes;
 	}
 
 	@Override
