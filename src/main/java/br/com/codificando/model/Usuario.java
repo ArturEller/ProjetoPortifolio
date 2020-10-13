@@ -35,7 +35,7 @@ public class Usuario {
 	private String senha;
 	
 	@NonNull
-	@Size(max=11)
+	@Size(max=20)
 	private String cpf;
 	
 	private boolean ativo;

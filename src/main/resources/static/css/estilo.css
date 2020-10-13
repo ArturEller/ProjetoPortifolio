@@ -10,6 +10,15 @@ body{
     height: 700px;
 }
 
+.container-login{
+    width: 25%;
+    margin-top: 100px;
+    margin-bottom: 350px;
+    padding-top: 10px;
+    border: 1px solid #1b1b1b;
+    border-radius: 10px;
+}
+
 .div-contato {
     background: #1b1b12;
 }
@@ -171,6 +180,14 @@ select{
 
 .cl-dark{
     color: white;
+}
+
+.label-lembrar{
+    font-size: small;
+}
+
+.btn-entrar{
+    width: 100%;
 }
 
 @media screen and (max-width: 500px){
